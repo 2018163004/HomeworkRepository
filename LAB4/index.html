@@ -59,7 +59,7 @@
                 }
                 function updateDisplay(){
                     while (main.firstChild){
-                        main.removeChild(main,firstChild);
+                        main.removeChild(main.firstChild);
                     }
                     if(finalGroup.length === 0){
                         const para = document.createElement('p');
