@@ -1,0 +1,26 @@
+body {font-family: arial, helvetica, sans-serif; font-size:12pt;}
+.welcome {font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:18pt; font-weight:bold;}
+a {text-decoration:none; color:midnightblue;
+    width:60px; height:40px; padding:0.2em; border:white outset;}
+a:hover {text-decoration:underline;}
+.enter {width: 40%; text-align:justify; margin:5px; text-indent:1em;
+    background-color: lemonchiffon; border:slateblue medium solid;}
+.enter p {font-size:12pt; color:navy;}
+#Signup {background-color:rgb(169, 192, 255); width:60px; height:40px; padding:0.2em; border:white outset;}
+#Cancel {background-color:powderblue; width:60px; height:40px; padding:0.2em; border:white outset;}
+#login {background-color:rgb(169, 192, 255); width:60px; height:40px; padding:0.2em; border:white outset;}
+
+div {width:1020px; margin: 0 auto;}
+.header {font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:18pt; font-weight:bold;}
+#hello {position: relative; animation-name: movingimage; animation-duration: 2s;
+    animation-timing-function: linear; animation-iteration-count: 1;}
+@keyframes movingimage
+{
+    0% {opacity:1; left: 1020px;}
+    100% {opacity:1; left:0px;}
+}
+
+aside {display: flex; flex-flow: column; align-items: stretch; flex: 3;}
+main {display: flex; flex-flow: row wrap; justify-content: space-around;
+    flex: 7;}
+
