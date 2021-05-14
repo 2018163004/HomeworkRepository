@@ -33,6 +33,6 @@ input {
 }
 
 section {width: 300px; height: 300px; margin: 5px; background-color: black; position: relative;}
-section img {width: 200px; height: 200px display: block; position: absolute; bottom: 0px;}
+img {width: 200px; height: 200px; display: block; position: absolute; bottom: 0px;}
 
 

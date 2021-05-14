@@ -11,7 +11,7 @@
                 return response.json();
             })
             .then(function(json) {
-                const product = json;
+                let product = json;
                 initialize(product);
             })
             .catch(function(err) {
