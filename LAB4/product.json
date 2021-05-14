@@ -3,180 +3,180 @@
         "name" : "아르카나 루시안",
         "price" : 1350,
         "image" : "아르카나 루시안.jpg",
-        "type" : "스킨"
+        "type" : "skin"
     },
     {
         "name" : "루시안",
         "price" : 880,
         "image" : "루시안.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
-        "name" : "아르카나 루시안 크로마 세트",
+        "name" : "아르카나 루시안 set",
         "price" : 3235,
-        "image" : "아르카나 루시안 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "아르카나 루시안 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "제라스",
         "price" : 880,
         "image" : "제라스.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "아르카나 제라스",
         "price" : 3235,
         "image" : "아르카나 제라스.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "아르카나 제라스 크로마 세트",
+        "name" : "아르카나 제라스 set",
         "price" : 3235,
-        "image" : "아르카나 제라스 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "아르카나 제라스 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "카밀",
         "price" : 880,
         "image" : "카밀.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "아르카나 카밀",
         "price" : 3235,
         "image" : "아르카나 카밀.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "아르카나 카밀 크로마 세트",
+        "name" : "아르카나 카밀 set",
         "price" : 3235,
-        "image" : "아르카나 카밀 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "아르카나 카밀 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "탐 켄치",
         "price" : 880,
         "image" : "탐 켄치.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "아르카나 탐 켄치",
         "price" : 3235,
         "image" : "아르카나 탐 켄치.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "아르카나 탐 켄치 크로마 세트",
+        "name" : "아르카나 탐 켄치 set",
         "price" : 3235,
-        "image" : "아르카나 탐 켄치 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "아르카나 탐 켄치 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "벨코즈",
         "price" : 880,
         "image" : "벨코즈.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "어둠서리 벨코즈",
         "price" : 3235,
         "image" : "어둠서리 벨코즈.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "어둠서리 벨코즈 크로마 세트",
+        "name" : "어둠서리 벨코즈 set",
         "price" : 3235,
-        "image" : "어둠서리 벨코즈 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "어둠서리 벨코즈 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "사이온",
         "price" : 880,
         "image" : "사이온.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "어둠서리 사이온",
         "price" : 3235,
         "image" : "어둠서리 사이온.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "어둠서리 사이온 크로마 세트",
+        "name" : "어둠서리 사이온 set",
         "price" : 3235,
-        "image" : "어둠서리 사이온 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "어둠서리 사이온 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "케일",
         "price" : 880,
         "image" : "케일.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "용 사냥꾼 케일",
         "price" : 3235,
         "image" : "용 사냥꾼 케일.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "용 사냥꾼 케일 크로마 세트",
+        "name" : "용 사냥꾼 케일 set",
         "price" : 3235,
-        "image" : "용 사냥꾼 케일 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "용 사냥꾼 케일 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "트위치",
         "price" : 880,
         "image" : "트위치.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "용 사냥꾼 트위치",
         "price" : 3235,
         "image" : "용 사냥꾼 트위치.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "용 사냥꾼 트위치 크로마 세트",
+        "name" : "용 사냥꾼 트위치 set",
         "price" : 3235,
-        "image" : "용 사냥꾼 트위치 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "용 사냥꾼 트위치 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "갈리오",
         "price" : 880,
         "image" : "갈리오.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "용 수호자 갈리오",
         "price" : 3235,
         "image" : "용 수호자 갈리오.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "용 수호자 갈리오 크로마 세트",
+        "name" : "용 수호자 갈리오 set",
         "price" : 3235,
-        "image" : "용 수호자 갈리오 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "용 수호자 갈리오 set.jpg",
+        "type" : "set"
     },
     {
         "name" : "그웬",
         "price" : 880,
         "image" : "그웬.jpg",
-        "type" : "챔피언"
+        "type" : "champion"
     },
     {
         "name" : "우주 그루브 그웬",
         "price" : 3235,
         "image" : "우주 그루브 그웬.jpg",
-        "type" : "크로마 세트"
+        "type" : "set"
     },
     {
-        "name" : "우주 그루브 그웬 크로마 세트",
+        "name" : "우주 그루브 그웬 set",
         "price" : 3235,
-        "image" : "우주 그루브 그웬 크로마 세트.jpg",
-        "type" : "크로마 세트"
+        "image" : "우주 그루브 그웬 set.jpg",
+        "type" : "set"
     }
 ]
