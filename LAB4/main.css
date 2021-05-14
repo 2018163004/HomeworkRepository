@@ -20,19 +20,23 @@ div {width:1020px; margin: 0 auto;}
     100% {opacity:1; left:0px;}
 }
 
+body {width: 800px; margin: 0 auto; display: flex;}
+
+
 aside {display: flex; flex-flow: column; align-items: stretch; flex: 3;}
-main {width:1020px; display: flex; flex-flow: row; justify-content: center;}
+main {display: flex; flex-flow: row wrap; justify-content: space-around;}
 
 input {
-    background: black;
+    background: blue;
     box-shadow: inset 1px 1px 1px white;
-    color: yellow;
-    border: none;
+    color: whitesmoke;
+    border: inset 1px;
     padding: 5px;
     width: 200px;
 }
 
-section {width: 500px; height: 500px; margin: 5px; background-color: black;}
+button {background: black; color: yellow; padding 5px; border-radius: 10px; box-shadow: inset 1px white;}
+section {width: 45%; height: 220px; margin: 5px; background-color: black; position: relative;}
 img {width: 200px; height: 200px; display: block; position: absolute; bottom: 0px;}
 section p {color: white;}
 
