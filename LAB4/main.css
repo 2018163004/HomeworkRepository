@@ -21,6 +21,18 @@ div {width:1020px; margin: 0 auto;}
 }
 
 aside {display: flex; flex-flow: column; align-items: stretch; flex: 3;}
-main {display: flex; flex-flow: row wrap; justify-content: space-around;
-    flex: 7;}
+main {display: flex; flex-flow: row wrap; justify-content: space-around; flex: 7;}
+
+input {
+    background: black;
+    box-shadow: inset 1px 1px 1px white;
+    color: yellow;
+    border: none;
+    padding: 5px;
+    width: 200px;
+}
+
+section {width: 45%; margin: 5px; background-color: black; position: relative; height: 220px;}
+section img {width 100%; display: block; position: absolute; bottom: 0px;}
+
 
