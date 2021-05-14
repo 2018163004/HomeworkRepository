@@ -21,7 +21,7 @@ div {width:1020px; margin: 0 auto;}
 }
 
 aside {display: flex; flex-flow: column; align-items: stretch; flex: 3;}
-main {display: flex; flex-flow: row wrap; justify-content: space-around; flex: 7;}
+main {width:1020px; display: flex; flex-flow: row; justify-content: center;}
 
 input {
     background: black;
@@ -32,7 +32,7 @@ input {
     width: 200px;
 }
 
-section {width: 45%; margin: 5px; background-color: black; position: relative; height: 220px;}
-section img {width: 100%; display: block; position: absolute; bottom: 0px;}
+section {width: 300px; height: 300px; margin: 5px; background-color: black; position: relative;}
+section img {width: 200px; height: 200px display: block; position: absolute; bottom: 0px;}
 
 
