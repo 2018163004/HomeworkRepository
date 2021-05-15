@@ -60,7 +60,7 @@
                 }
                 function updateDisplay(){
                     while (main.firstChild){
-                        main.removeChild(firstChild);
+                        main.removeChild(main.firstChild);
                     }
                     if(finalGroup.length === 0){
                         const para = document.createElement('p');
@@ -106,7 +106,7 @@
                     }
                     section.appendChild(image);
                     section.appendChild(btn);
-                    btn.onclick = showMore;
+                    btn.onclick = showMore();
                 }
             }
         </script>
