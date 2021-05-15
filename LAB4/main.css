@@ -32,9 +32,9 @@ input {
     width: 200px;
 }
 
-button {background: white; color: yellow; padding: 5px; border-radius: 10px; box-shadow: inset 2px white;}
+button {background: black; color: yellow; padding: 5px; border-radius: 10px; box-shadow: inset 2px white;}
 section {width: 45%; height: 220px; margin: 5px; background-color: black; position: relative;}
 img {width: 200px; height: 200px; display: block; position: absolute; bottom: 0px; right: 0px;}
-section p {color: white; margin :3px; border: solid white 2px;}
+section p {color: white; margin :3px;}
 
 
