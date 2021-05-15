@@ -79,9 +79,9 @@
                 function appendB(product){
                     let url = 'images/'+ product.image;
                     fetch(url).then(function(response){
-                        return response.block();
-                    }).then(function(block) {
-                        let objectURL = URL.createObjectURL(block);
+                        return response.blob();
+                    }).then(function(blob) {
+                        let objectURL = URL.createObjectURL(blob);
                         DisplayP(objectURL,product);
                     });
                 }
@@ -105,7 +105,7 @@
                     }
                     section.appendChild(image);
                     section.appendChild(btn);
-                    btn.onclick = btndisplay();
+                    btn.onclick = btndisplay;
                 }
             }
         </script>
