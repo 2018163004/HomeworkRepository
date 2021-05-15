@@ -178,5 +178,59 @@
         "price" : 3235,
         "image" : "우주 그루브 그웬 크로마 세트.jpg",
         "type" : "set"
+    },
+    {
+        "name" : "블리츠크랭크",
+        "price" : 880,
+        "image" : "블리츠크랭크.jpg",
+        "type" : "champion"
+    },
+    {
+        "name" : "중간보스 블리츠크랭크",
+        "price" : 3235,
+        "image" : "중간보스 블리츠크랭크.jpg",
+        "type" : "set"
+    },
+    {
+        "name" : "중간보스 블리츠크랭크 크로마 세트",
+        "price" : 3235,
+        "image" : "중간보스 블리츠크랭크 크로마 세트.jpg",
+        "type" : "set"
+    },
+    {
+        "name" : "코르키",
+        "price" : 880,
+        "image" : "코르키.jpg",
+        "type" : "champion"
+    },
+    {
+        "name" : "아케이드 코르키",
+        "price" : 3235,
+        "image" : "아케이드 코르키.jpg",
+        "type" : "set"
+    },
+    {
+        "name" : "아케이드 코르키 크로마 세트",
+        "price" : 3235,
+        "image" : "아케이드 코르키 크로마 세트.jpg",
+        "type" : "set"
+    },
+    {
+        "name" : "신 짜오",
+        "price" : 880,
+        "image" : "신 짜오.jpg",
+        "type" : "champion"
+    },
+    {
+        "name" : "용 사냥꾼 신 짜오",
+        "price" : 3235,
+        "image" : "용 사냥꾼 신 짜오.jpg",
+        "type" : "set"
+    },
+    {
+        "name" : "용 사냥꾼 신 짜오 크로마 세트",
+        "price" : 3235,
+        "image" : "용 사냥꾼 신 짜오 크로마 세트.jpg",
+        "type" : "set"
     }
 ]
