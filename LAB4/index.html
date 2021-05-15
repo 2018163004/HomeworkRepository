@@ -60,7 +60,7 @@
                 }
                 function updateDisplay(){
                     while (main.firstChild){
-                        main.removeChild(main.firstChild);
+                        main.removeChild(firstChild);
                     }
                     if(finalGroup.length === 0){
                         const para = document.createElement('p');
@@ -86,7 +86,7 @@
                 }
                 function showProduct(objectURL,product){
                     const section = document.createElement('section');
-                    const heading = document.createElement('p')
+                    const heading = document.createElement('p');
                     const para = document.createElement('p');
                     const image = document.createElement('img');
                     const btn = document.createElement('button');
@@ -106,7 +106,7 @@
                     }
                     section.appendChild(image);
                     section.appendChild(btn);
-                    btn.onclick = showMore();
+                    btn.onclick = showMore;
                 }
             }
         </script>
@@ -127,7 +127,7 @@
             <aside>
                 <form>
                     <div>
-                        <label for='category'>Chosse a category:</label>
+                        <label for='category'>Choose a category:</label>
                         <select id='category'>
                             <option selected>All</option>
                             <option>champion</option>
