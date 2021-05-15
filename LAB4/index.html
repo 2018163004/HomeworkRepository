@@ -95,14 +95,15 @@
 
 
                     main.appendChild(section);
-                    function showMore(){
-                        section.appendChild(heading);
-                        section.appendChild(para);
-                    }
+                    
                     section.appendChild(image);
                     section.appendChild(btn);
                 }
                 btn.onclick = showMore();
+                function showMore(){
+                    section.appendChild(heading);
+                    section.appendChild(para);
+                }
             }
         </script>
       
