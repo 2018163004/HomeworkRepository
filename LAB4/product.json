@@ -27,7 +27,7 @@
         "name" : "아르카나 제라스",
         "price" : 3235,
         "image" : "아르카나 제라스.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "아르카나 제라스 크로마 세트",
@@ -45,7 +45,7 @@
         "name" : "아르카나 카밀",
         "price" : 3235,
         "image" : "아르카나 카밀.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "아르카나 카밀 크로마 세트",
@@ -63,7 +63,7 @@
         "name" : "아르카나 탐 켄치",
         "price" : 3235,
         "image" : "아르카나 탐 켄치.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "아르카나 탐 켄치 크로마 세트",
@@ -81,7 +81,7 @@
         "name" : "어둠서리 벨코즈",
         "price" : 3235,
         "image" : "어둠서리 벨코즈.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "어둠서리 벨코즈 크로마 세트",
@@ -99,7 +99,7 @@
         "name" : "어둠서리 사이온",
         "price" : 3235,
         "image" : "어둠서리 사이온.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "어둠서리 사이온 크로마 세트",
@@ -117,7 +117,7 @@
         "name" : "용 사냥꾼 케일",
         "price" : 3235,
         "image" : "용 사냥꾼 케일.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "용 사냥꾼 케일 크로마 세트",
@@ -135,7 +135,7 @@
         "name" : "용 사냥꾼 트위치",
         "price" : 3235,
         "image" : "용 사냥꾼 트위치.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "용 사냥꾼 트위치 크로마 세트",
@@ -153,7 +153,7 @@
         "name" : "용 수호자 갈리오",
         "price" : 3235,
         "image" : "용 수호자 갈리오.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "용 수호자 갈리오 크로마 세트",
@@ -171,7 +171,7 @@
         "name" : "우주 그루브 그웬",
         "price" : 3235,
         "image" : "우주 그루브 그웬.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "우주 그루브 그웬 크로마 세트",
@@ -189,7 +189,7 @@
         "name" : "중간보스 블리츠크랭크",
         "price" : 3235,
         "image" : "중간보스 블리츠크랭크.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "중간보스 블리츠크랭크 크로마 세트",
@@ -207,7 +207,7 @@
         "name" : "아케이드 코르키",
         "price" : 3235,
         "image" : "아케이드 코르키.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "아케이드 코르키 크로마 세트",
@@ -225,7 +225,7 @@
         "name" : "용 사냥꾼 신 짜오",
         "price" : 3235,
         "image" : "용 사냥꾼 신 짜오.jpg",
-        "type" : "set"
+        "type" : "skin"
     },
     {
         "name" : "용 사냥꾼 신 짜오 크로마 세트",
