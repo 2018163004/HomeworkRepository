@@ -6,30 +6,23 @@
 
         <link rel="stylesheet" type= "text/css" href= "main.css">
         <script>
-            let counter = 1;
-            document.addEventListener('DOMContentLoaded',load);
-
+            fetch('product.json')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                let product = json;
+                initialize(product);
+            })
+            .catch(function(err) {
+                console.log('error:' + err.message);
+            });
+            
             window.onscroll = () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-                    load();
+                    initialize(product);
                 }
             };
-            function load(){
-                const start = counter;
-                const end = start + 1;
-                counter = end + 1;
-                fetch('product.json')
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    let product = json;
-                    initialize(product);
-                })
-                .catch(function(err) {
-                    console.log('error:' + err.message);
-                });
-                }
             function initialize(product){
                 const category = document.querySelector('#category');
                 const search = document.querySelector('#search');
