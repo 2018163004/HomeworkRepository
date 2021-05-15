@@ -31,7 +31,7 @@
                 let finalGroup = product;
                 updateDisplay();
                 
-                searchbutton.onclick = selectCategory;
+                searchbutton.onclick = selectCategory();
                 function selectCategory(e) {
                     e.preventDefault();
                     let categoryGroup = [];
@@ -69,11 +69,11 @@
                     }
                     else {
                         for (let i=0; i<finalGroup.length; i++){
-                            fecthBlob(finalGroup[i]);
+                            fetchBlob(finalGroup[i]);
                         }
                     }
                 }
-                function fecthBlob(product){
+                function fetchBlob(product){
                     let url = 'images/'+ product.image;
                     fetch(url)
                     .then(function(response){
