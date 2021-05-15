@@ -26,86 +26,86 @@
                 const search = document.querySelector('#search');
                 const searchbutton = document.querySelector('button');
                 const main = document.querySelector('main');
-                let categoryGroup;
-                let finalGroup;
-                finalGroup = products;
-                updateDisplay();
+                let categoryG;
+                let finalG;
+                finalG = products;
+                Display();
                 
                 searchbutton.onclick = selectCategory;
                 
                 function selectCategory(evt) {
                     evt.preventDefault();
-                    categoryGroup = [];
-                    finalGroup = [];
+                    categoryG = [];
+                    finalG = [];
                     if (category.value === 'All'){
-                        categoryGroup = products;
-                        selectProduct();
+                        categoryG = products;
+                        searchP();
                     } else {
                         for(let i =0; i < products.length ; i++) {
                             if (products[i].type === category.value){
-                                categoryGroup.push(products[i]);
+                                categoryG.push(products[i]);
                             }
                         }
-                        selectProduct();
+                        searchP();
                     }
                 }
-                function selectProduct(){
+                function searchP(){
                     if(search.value.trim() === '') {
-                        finalGroup = categoryGroup;
-                        updateDisplay();
+                        finalG = categoryG;
+                        Display();
                     } else {
-                        for (let i=0; i < categoryGroup.length; i++) {
-                            if(categoryGroup[i].name.indexOf(search.value.trim()) !== -1){
-                                finalGroup.push(categoryGroup[i]);
+                        for (let i=0; i < categoryG.length; i++) {
+                            if(categoryG[i].name.indexOf(search.value.trim()) !== -1){
+                                finalG.push(categoryG[i]);
                             }
                         }
-                        updateDisplay();
+                        Display();
                     }
                 }
-                function updateDisplay(){
+                function Display(){
                     while (main.firstChild){
                         main.removeChild(main.firstChild);
                     }
-                    if(finalGroup.length === 0){
-                        const para = document.createElement('p');
-                        para.textContent = 'No result!';
-                        main.appendChild(para);
+                    if(finalG.length === 0){
+                        const noresult = document.createElement('p');
+                        noresult.textContent = 'No result!';
+                        main.appendChild(noresult);
                     } else {
-                        for (let i=0; i<finalGroup.length; i++){
-                            fetchBlob(finalGroup[i]);
+                        for (let i=0; i<finalG.length; i++){
+                            appendB(finalG[i]);
                         }
                     }
                 }
-                function fetchBlob(product){
+                function appendB(product){
                     let url = 'images/'+ product.image;
                     fetch(url).then(function(response){
-                        return response.blob();
-                    }).then(function(blob) {
-                        let objectURL = URL.createObjectURL(blob);
-                        showProduct(objectURL,product);
+                        return response.block();
+                    }).then(function(block) {
+                        let objectURL = URL.createObjectURL(block);
+                        DisplayP(objectURL,product);
                     });
                 }
-                function showProduct(objectURL,product){
+                function DisplayP(objectURL,product){
                     const section = document.createElement('section');
-                    const heading = document.createElement('p');
-                    const para = document.createElement('p');
+                    const Pname = document.createElement('p');
+                    const Pprice = document.createElement('p');
                     const image = document.createElement('img');
                     const btn = document.createElement('button');
                     btn.textContent='Click';
                     
                     section.setAttribute('class', product.type);
-                    heading.textContent = product.name;
-                    para.textContent = product.price;
+                    Pname.textContent = product.name;
+                    Pprice.textContent = product.price;
                     image.src =objectURL;
                     image.alt = product.name;
                     main.appendChild(section);
-                    function showMore(){
-                        section.appendChild(heading);
-                        section.appendChild(para);
+                    function btndisplay(){
+                        section.appendChild(Pname);
+                        section.appendChild(Pprice);
                     }
                     section.appendChild(image);
                     section.appendChild(btn);
-                    btn.onclick = showMore;
+                    btn.onclick = btndisplay();
                 }
             }
         </script>
@@ -123,26 +123,24 @@
             </p>
         </div>
         <div>
-            <aside>
-                <form>
-                    <div>
-                        <label for='category'>Choose a category:</label>
-                        <select id='category'>
-                            <option selected>All</option>
-                            <option>champion</option>
-                            <option>skin</option>
-                            <option>set</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for='search'>Enter search term</label>
-                        <input type='text' id='search' placeholder = 'e.g. 루시안'>
-                    </div>
-                    <div>
-                        <button>Filter results</button>
-                    </div>
-                </form>
-            </aside>
+            <form>
+                <div>
+                    <label for='category'>Choose a category:</label>
+                    <select id='category'>
+                        <option selected>All</option>
+                        <option>champion</option>
+                        <option>skin</option>
+                        <option>set</option>
+                    </select>
+                </div>
+                <div>
+                    <label for='search'>Enter search term</label>
+                    <input type='text' id='search' placeholder = 'e.g. 루시안'>
+                </div>
+                <div>
+                    <button>Filter results</button>
+                </div>
+            </form>
             <main>
             </main>
         </div>

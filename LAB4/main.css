@@ -20,7 +20,6 @@ div {width:1020px; margin: 0 auto;}
     100% {opacity:1; left:0px;}
 }
 
-aside {display: flex; flex-flow: column; align-items: stretch; flex: 3;}
 main {display: flex; flex-flow: row wrap; justify-content: space-around;}
 
 input {background-color: rgb(169, 192, 255); padding: 5px; width: 200px;}
