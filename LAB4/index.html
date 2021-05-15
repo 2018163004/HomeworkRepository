@@ -17,8 +17,7 @@
             .catch(function(err) {
                 console.log('error:' + err.message);
             });
-            let counter = 1;
-            document.addEventListner('DOMContentLoaded', load);
+            document.addEventListner('DOMContentLoaded',load)
             window.onscroll = () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
                     initialize(product);
@@ -26,14 +25,12 @@
             } 
             function initialize(product){
                 const start = counter;
-                const end = start + 1;
-                counter = end + 1;
                 const category = document.querySelector('#category');
                 const search = document.querySelector('#search');
                 const searchbutton = document.querySelector('button');
                 const main = document.querySelector('main');
                 let finalGroup = product;
-                finalGroup.forEach(updateDisplay());
+                updateDisplay();
                 
                 searchbutton.onclick = selectCategory;
                 function selectCategory(e) {
@@ -54,7 +51,7 @@
                         selectProduct();
                     }
                 }
-                function selectProcut(){
+                function selectProduct(){
                     for (let i=0; i<product.length; i++){
                         if(categoryGroup[i].name.indexOf(search) !== -1){
                             finalGroup.push(categoryGroup[i]);
