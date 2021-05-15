@@ -28,16 +28,14 @@
                 const search = document.querySelector('#search');
                 const searchbutton = document.querySelector('button');
                 const main = document.querySelector('main');
-                let categoryGroup;
-                let finalGroup;
                 let finalGroup = product;
                 updateDisplay();
                 
                 searchbutton.onclick = selectCategory;
                 function selectCategory(e) {
                     e.preventDefault();
-                    categoryGroup = [];
-                    finalGroup = [];
+                    let categoryGroup = [];
+                    let finalGroup = [];
                     if (category.value === 'All'){
                         categoryGroup = product;
                         selectProduct();
