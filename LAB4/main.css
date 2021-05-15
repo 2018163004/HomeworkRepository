@@ -24,7 +24,7 @@ aside {display: flex; flex-flow: column; align-items: stretch; flex: 3;}
 main {display: flex; flex-flow: row wrap; justify-content: space-around;}
 
 input {
-    background: blue;
+    background-color: rgb(169, 192, 255);
     box-shadow: inset 1px 1px 1px white;
     color: whitesmoke;
     border: inset 1px;
