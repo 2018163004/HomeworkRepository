@@ -6,19 +6,19 @@
 
         <link rel="stylesheet" type= "text/css" href= "main.css">
         <script>
-            let product;
+            let products;
             fetch('product.json').then(function(response) {
                 return response.json();
             }).then(function(json) {
-                product = json;
-                initialize(product);
+                products = json;
+                initialize(products);
             }).catch(function(err) {
                 console.log('error:' + err.message);
             });
             
             window.onscroll = () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-                    initialize(product);
+                    initialize(products);
                 }
             };
             function initialize(product){
