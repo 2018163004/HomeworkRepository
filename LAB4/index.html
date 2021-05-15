@@ -6,23 +6,30 @@
 
         <link rel="stylesheet" type= "text/css" href= "main.css">
         <script>
-            fetch('product.json')
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(json) {
-                let product = json;
-                initialize(product);
-            })
-            .catch(function(err) {
-                console.log('error:' + err.message);
-            });
-            
+            let counter = 1;
+            document.addEventListener('DOMContentLoaded',load);
+
             window.onscroll = () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-                    initialize(product);
+                    load();
                 }
-            } 
+            };
+            function load(){
+                const start = counter;
+                const end = start + 1;
+                counter = end + 1;
+                fetch('product.json')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(json) {
+                    let product = json;
+                    initialize(product);
+                })
+                .catch(function(err) {
+                console.log('error:' + err.message);
+                });
+                }
             function initialize(product){
                 const category = document.querySelector('#category');
                 const search = document.querySelector('#search');
@@ -90,7 +97,6 @@
                     const para = document.createElement('p');
                     const image = document.createElement('img');
                     const btn = document.createElement('button');
-                    btn.classList.add('btn');
                     btn.textContent='Click to see more';
                     
                     section.setAttribute('class', product.type);
