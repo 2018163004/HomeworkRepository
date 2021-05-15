@@ -88,9 +88,9 @@
                     const heading = document.createElement('p')
                     const para = document.createElement('p');
                     const image = document.createElement('img');
-                    const button = document.createElement('btn');
-                    button.classList.add('btn');
-                    button.textContent='Click to see more';
+                    const btn = document.createElement('button');
+                    btn.classList.add('btn');
+                    btn.textContent='Click to see more';
                     
                     section.setAttribute('class', product.type);
                     heading.textContent = product.name;
@@ -105,7 +105,7 @@
                         section.appendChild(para);
                     }
                     section.appendChild(image);
-                    section.appendChild(button);
+                    section.appendChild(btn);
                     button.onclick = showMore;
                 }
             }

@@ -12,9 +12,9 @@
         "type" : "champion"
     },
     {
-        "name" : "아르카나 루시안 set",
+        "name" : "아르카나 루시안 세트",
         "price" : 3235,
-        "image" : "아르카나 루시안 set.jpg",
+        "image" : "아르카나 루시안 세트.jpg",
         "type" : "set"
     },
     {
@@ -30,9 +30,9 @@
         "type" : "set"
     },
     {
-        "name" : "아르카나 제라스 set",
+        "name" : "아르카나 제라스 세트",
         "price" : 3235,
-        "image" : "아르카나 제라스 set.jpg",
+        "image" : "아르카나 제라스 세트.jpg",
         "type" : "set"
     },
     {
@@ -48,9 +48,9 @@
         "type" : "set"
     },
     {
-        "name" : "아르카나 카밀 set",
+        "name" : "아르카나 카밀 세트",
         "price" : 3235,
-        "image" : "아르카나 카밀 set.jpg",
+        "image" : "아르카나 카밀 세트.jpg",
         "type" : "set"
     },
     {
@@ -66,9 +66,9 @@
         "type" : "set"
     },
     {
-        "name" : "아르카나 탐 켄치 set",
+        "name" : "아르카나 탐 켄치 세트",
         "price" : 3235,
-        "image" : "아르카나 탐 켄치 set.jpg",
+        "image" : "아르카나 탐 켄치 세트.jpg",
         "type" : "set"
     },
     {
@@ -84,9 +84,9 @@
         "type" : "set"
     },
     {
-        "name" : "어둠서리 벨코즈 set",
+        "name" : "어둠서리 벨코즈 세트",
         "price" : 3235,
-        "image" : "어둠서리 벨코즈 set.jpg",
+        "image" : "어둠서리 벨코즈 세트.jpg",
         "type" : "set"
     },
     {
@@ -102,9 +102,9 @@
         "type" : "set"
     },
     {
-        "name" : "어둠서리 사이온 set",
+        "name" : "어둠서리 사이온 세트",
         "price" : 3235,
-        "image" : "어둠서리 사이온 set.jpg",
+        "image" : "어둠서리 사이온 세트.jpg",
         "type" : "set"
     },
     {
@@ -120,9 +120,9 @@
         "type" : "set"
     },
     {
-        "name" : "용 사냥꾼 케일 set",
+        "name" : "용 사냥꾼 케일 세트",
         "price" : 3235,
-        "image" : "용 사냥꾼 케일 set.jpg",
+        "image" : "용 사냥꾼 케일 세트.jpg",
         "type" : "set"
     },
     {
@@ -138,9 +138,9 @@
         "type" : "set"
     },
     {
-        "name" : "용 사냥꾼 트위치 set",
+        "name" : "용 사냥꾼 트위치 세트",
         "price" : 3235,
-        "image" : "용 사냥꾼 트위치 set.jpg",
+        "image" : "용 사냥꾼 트위치 세트.jpg",
         "type" : "set"
     },
     {
@@ -156,9 +156,9 @@
         "type" : "set"
     },
     {
-        "name" : "용 수호자 갈리오 set",
+        "name" : "용 수호자 갈리오 세트",
         "price" : 3235,
-        "image" : "용 수호자 갈리오 set.jpg",
+        "image" : "용 수호자 갈리오 세트.jpg",
         "type" : "set"
     },
     {
@@ -174,9 +174,9 @@
         "type" : "set"
     },
     {
-        "name" : "우주 그루브 그웬 set",
+        "name" : "우주 그루브 그웬 세트",
         "price" : 3235,
-        "image" : "우주 그루브 그웬 set.jpg",
+        "image" : "우주 그루브 그웬 세트.jpg",
         "type" : "set"
     }
 ]
