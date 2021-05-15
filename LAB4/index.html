@@ -6,15 +6,12 @@
 
         <link rel="stylesheet" type= "text/css" href= "main.css">
         <script>
-            fetch('product.json')
-            .then(function(response) {
+            fetch('product.json').then(function(response) {
                 return response.json();
-            })
-            .then(function(json) {
+            }).then(function(json) {
                 let product = json;
                 initialize(product);
-            })
-            .catch(function(err) {
+            }).catch(function(err) {
                 console.log('error:' + err.message);
             });
             
@@ -32,8 +29,8 @@
                 updateDisplay();
                 
                 searchbutton.onclick = selectCategory();
-                function selectCategory(e) {
-                    e.preventDefault();
+                function selectCategory(evt) {
+                    evt.preventDefault();
                     let categoryGroup = [];
                     let finalGroup = [];
                     if (category.value === 'All'){
@@ -75,11 +72,9 @@
                 }
                 function fetchBlob(product){
                     let url = 'images/'+ product.image;
-                    fetch(url)
-                    .then(function(response){
+                    fetch(url).then(function(response){
                         return response.blob();
-                    })
-                    .then(function(blob) {
+                    }).then(function(blob) {
                         let objectURL = URL.createObjectURL(blob);
                         showProduct(objectURL,product);
                     });
