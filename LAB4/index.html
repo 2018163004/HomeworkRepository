@@ -6,41 +6,43 @@
 
         <link rel="stylesheet" type= "text/css" href= "main.css">
         <script>
-            let products;
             fetch('product.json').then(function(response) {
                 return response.json();
             }).then(function(json) {
-                products = json;
-                initialize(products);
+                let product = json;
+                initialize(product);
             }).catch(function(err) {
                 console.log('error:' + err.message);
             });
             
             window.onscroll = () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-                    initialize(products);
+                    initialize(product);
                 }
-            };
+            }
+
             function initialize(product){
                 const category = document.querySelector('#category');
                 const search = document.querySelector('#search');
                 const searchbutton = document.querySelector('button');
                 const main = document.querySelector('main');
-                
-                let finalGroup = product;
+                let categoryGroup;
+                let finalGroup;
+                finalGroup = products;
                 updateDisplay();
                 
-                searchbutton.onclick = selectCategory();
-                function selectCategory() {
-                    let categoryGroup = [];
-                    let finalGroup = [];
+                searchbutton.onclick = selectCategory;
+                
+                function selectCategory(evt) {
+                    evt.preventDefault();
+                    categoryGroup = [];
+                    finalGroup = [];
                     if (category.value == 'All'){
                         categoryGroup = product;
                         selectProduct();
-                    }
-                    else {
+                    } else {
                         let CaseType = category.value;
-                        for(let i =0; i < product.length ; i++){
+                        for(let i =0; i < product.length ; i++) {
                             if (product[i].type == CaseType){
                                 categoryGroup.push(product[i]);
                             }
@@ -49,9 +51,14 @@
                     }
                 }
                 function selectProduct(){
-                    for (let i=0; i<product.length; i++){
-                        if(categoryGroup[i].name.indexOf(search) !== -1){
-                            finalGroup.push(categoryGroup[i]);
+                    if(search.value.trim() === '') {
+                        finalGroup = categoryGroup;
+                        updateDisplay();
+                    } else{
+                        for (let i=0; i < categoryGroup.length; i++) {
+                            if(categoryGroup[i].name.indexOf(search.value.trim()) !== -1){
+                                finalGroup.push(categoryGroup[i]);
+                            }
                         }
                     }
                     updateDisplay();
@@ -60,12 +67,11 @@
                     while (main.firstChild){
                         main.removeChild(main.firstChild);
                     }
-                    if(finalGroup.length == 0){
+                    if(finalGroup.length === 0){
                         const para = document.createElement('p');
                         para.textContent = 'No result to display!';
                         main.appendChild(para);
-                    }
-                    else {
+                    } else {
                         for (let i=0; i<finalGroup.length; i++){
                             fetchBlob(finalGroup[i]);
                         }
@@ -93,8 +99,6 @@
                     para.textContent = product.price;
                     image.src =objectURL;
                     image.alt = product.name;
-
-
                     main.appendChild(section);
                     function showMore(){
                         section.appendChild(heading);
@@ -102,7 +106,7 @@
                     }
                     section.appendChild(image);
                     section.appendChild(btn);
-                    btn.onclick = showMore();
+                    btn.onclick = showMore;
                 }
             }
         </script>
@@ -133,7 +137,7 @@
                     </div>
                     <div>
                         <label for='search'>Enter search term</label>
-                        <input type='text' id='search' placeholder = 'e.g. champion'>
+                        <input type='text' id='search' placeholder = 'e.g. 루시안'>
                     </div>
                     <div>
                         <button>Filter results</button>
