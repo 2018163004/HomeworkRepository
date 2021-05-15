@@ -37,13 +37,12 @@
                     evt.preventDefault();
                     categoryGroup = [];
                     finalGroup = [];
-                    if (category.value == 'All'){
+                    if (category.value === 'All'){
                         categoryGroup = products;
                         selectProduct();
                     } else {
-                        let CaseType = category.value;
                         for(let i =0; i < products.length ; i++) {
-                            if (product[i].type == CaseType){
+                            if (product[i].type == category.value){
                                 categoryGroup.push(products[i]);
                             }
                         }
