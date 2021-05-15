@@ -27,7 +27,7 @@
                     initialize(product);
                 })
                 .catch(function(err) {
-                console.log('error:' + err.message);
+                    console.log('error:' + err.message);
                 });
                 }
             function initialize(product){
@@ -39,7 +39,8 @@
                 updateDisplay();
                 
                 searchbutton.onclick = selectCategory();
-                function selectCategory() {
+                function selectCategory(e) {
+                    e.preventDefault();
                     let categoryGroup = [];
                     let finalGroup = [];
                     if (category.value === 'All'){
