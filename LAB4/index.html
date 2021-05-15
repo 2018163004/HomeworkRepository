@@ -26,11 +26,7 @@
                 const search = document.querySelector('#search');
                 const searchbutton = document.querySelector('button');
                 const main = document.querySelector('main');
-                const section = document.createElement('section');
-                const heading = document.createElement('p');
-                const para = document.createElement('p');
-                const image = document.createElement('img');
-                const btn = document.createElement('button');
+                
                 let finalGroup = product;
                 updateDisplay();
                 
@@ -86,7 +82,11 @@
                     });
                 }
                 function showProduct(objectURL,product){
-                    
+                    const section = document.createElement('section');
+                    const heading = document.createElement('p');
+                    const para = document.createElement('p');
+                    const image = document.createElement('img');
+                    const btn = document.createElement('button');
                     btn.textContent='Click to see more';
                     
                     section.setAttribute('class', product.type);
@@ -97,14 +97,13 @@
 
 
                     main.appendChild(section);
-                    
+                    function showMore(){
+                        section.appendChild(heading);
+                        section.appendChild(para);
+                    }
                     section.appendChild(image);
                     section.appendChild(btn);
-                }
-                btn.onclick = showMore();
-                function showMore(){
-                    section.appendChild(heading);
-                    section.appendChild(para);
+                    btn.onclick = showMore();
                 }
             }
         </script>
