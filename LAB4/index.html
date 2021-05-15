@@ -39,8 +39,7 @@
                 updateDisplay();
                 
                 searchbutton.onclick = selectCategory();
-                function selectCategory(e) {
-                    e.preventDefault();
+                function selectCategory() {
                     let categoryGroup = [];
                     let finalGroup = [];
                     if (category.value === 'All'){
